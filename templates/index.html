@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="join">Join Room</button>
+
+    <div id="root"></div>
+
+    <form id="form-message" action="">
+      <input id="message-input" type="text" />
+      <button id="send-message" type="button">Enviar</button>
+    </form>
+
+    <script src="{{url_for('static', filename='socket.io.min.js')}}"></script>
+    <script src="{{url_for('static', filename='index.js')}}"></script>
+  </body>
+</html>
